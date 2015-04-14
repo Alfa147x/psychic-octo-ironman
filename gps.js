@@ -6,10 +6,6 @@ server.createServer ({
   port: 1337
 });
 
-// incoming data
-//server.on ('track', function (gps) {
-//  console.log ('gps: ' + gps);
-//});
 
 server.on ('data', function (raw) {
   console.log ('Incoming data: '+ raw);
